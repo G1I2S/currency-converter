@@ -3,10 +3,10 @@ body {
   background: linear-gradient(135deg, #000000, #0f3941);
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+ 
 }
 
 .container {
@@ -69,7 +69,8 @@ button:hover {
 canvas {
   margin-top: 20px;
   width: 100% !important;
-  height: 280px !important;
+  height: auto !important;   
+  max-height: 280px;         
 }
 
 @media (max-width: 480px) {
@@ -78,23 +79,24 @@ canvas {
   }
 
   .container {
-    padding: 15px;
+    padding: 12px;
+    border-radius: 8px;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   input, select, button {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 13px;
+    padding: 8px;
   }
 
   #resultado {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   canvas {
-    height: 220px !important;
+    max-height: 180px; 
   }
 }
